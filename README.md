@@ -10,8 +10,7 @@
   - DATA FETCHING WITH REACT HOOKS
   - HOW TO TRIGGER A HOOK PROGRAMMATICALLY
   
- Bonus: 
-  - Read the entire article
+ Bonus: Read the entire article
 
 ### 3. Algo Practice - EST TIME: 20min
 

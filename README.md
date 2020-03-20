@@ -2,7 +2,7 @@
 
 ### 1. TBD - EST TIME: 1hr
 
-- Follow along and work through the [Part3](.films-part3.md) markdown file
+- Follow along and work through the [Part3](films-part3.md) markdown file
 - Submit a link to your project as a pull request to this repo
 
 ### 2. Read The Following - EST TIME: 40min

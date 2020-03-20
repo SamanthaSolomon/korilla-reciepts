@@ -2,6 +2,7 @@
 
 ### 1. TBD - EST TIME: 1hr
 
+- Follow along and work through the [Part3](.Part2.md) markdown file
 - Submit a link to your project as a pull request to this repo
 
 ### 2. Read The Following - EST TIME: 40min

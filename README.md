@@ -1,6 +1,6 @@
 # W04D05-HW
 
-### 1. TBD - EST TIME: 1.5hr
+### 1. TBD - EST TIME: 2 - 5hrs
 
 - Follow along and work through the [Part3](films-part3.md) markdown file
 - Submit a link to your project as a pull request to this repo

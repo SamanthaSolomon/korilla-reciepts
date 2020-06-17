@@ -12,7 +12,6 @@
   - HOW TO TRIGGER A HOOK PROGRAMMATICALLY
 - Read: [Controlled vs Uncontrolled Inputs in React](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
   
- Bonus: Read the entire article
 
 ### 3. Algo Practice - EST TIME: 20min
 

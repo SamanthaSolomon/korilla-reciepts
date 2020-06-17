@@ -11,6 +11,16 @@ To do this, you'll need to move your state up to the top of the component tree s
 
 ![](http://bitmakerhq.s3.amazonaws.com/resources/react-film-library-component-hierarchy.png)
 
+### Ready?
+
+OK. If you have your own working version from completing Part 2 then feel free to use that or you can fork this [CodeSandbox](https://codesandbox.io/s/films-app-part-2-solution-q39ku) that contains a working  version of Part 2. 
+
+Here is the [React Architecture](https://docs.google.com/drawings/d/1Z3dE6paD59SF1gmDSS1smEO-VEqqYylzXrxhNeqSDJ8/edit) once Part 3 has been completed.
+
+Here is a [working version of the app up to Part 3](https://1n01q.csb.app/) completed with only the steps in this readme. Feel free to investigate the app in React Dev Tools to see whats going on.
+
+Here is the [final solution](https://fufid.codesandbox.io/) you will be building over the next several days.
+
 ### Task 1: Add State to the `App` Component
 
 Your `App` component will be the main place where state is set. From here, state can be passed down as props to the other components.

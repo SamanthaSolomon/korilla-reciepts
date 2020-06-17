@@ -10,7 +10,7 @@
 - Read: [React Hooks To Fetch Data](https://www.robinwieruch.de/react-hooks-fetch-data) but only the following sections:
   - DATA FETCHING WITH REACT HOOKS
   - HOW TO TRIGGER A HOOK PROGRAMMATICALLY
-- Read:[Controlled vs Uncontrolled Inputs in React](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
+- Read: [Controlled vs Uncontrolled Inputs in React](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
   
  Bonus: Read the entire article
 

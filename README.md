@@ -16,7 +16,7 @@
 
 ### 3. Algo Practice - EST TIME: 20min
 
-- Work through this [algorithm](https://git.generalassemb.ly/SEIR-224/W04D05-HW/blob/master/algorithms-homework.md) 
+- Work through this [algorithm](./algorithms-homework.md) 
 
 ### 4.  Interview Practice - EST TIME: 20min
 

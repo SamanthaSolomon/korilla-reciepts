@@ -20,7 +20,7 @@
 
 ### 4.  Interview Practice - EST TIME: 20min
 
-2. Add and answer the following question: 
+- Add and answer the following question: 
    - **Explain how useEffect is used to make an API call? Give one or more examples..**.
-3. All answers must be at least a paragraph in length however the more you write the more you have to talk about.
+- All answers must be at least a paragraph in length however the more you write the more you have to talk about.
 

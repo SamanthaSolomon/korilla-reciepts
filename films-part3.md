@@ -13,19 +13,17 @@ To do this, you'll need to move your state up to the top of the component tree s
 
 ### Task 1: Add State to the `App` Component
 
-Your `App` component will be the main place where states are set. From here, these states can be passed as props down to the other components.
+Your `App` component will be the main place where state is set. From here, state can be passed down as props to the other components.
 
-#### Step 1: Add a Constructor to `App.js`
-
-In `App.js`, start by creating a state decleration.
+#### Step 1: Import `useState` into `App.js`
 
 #### Step 2: Initialize the State Object
 
-Now, set three states:
+Now, set three separate states:
 
-1. `films`: to hold a reference to `TMDB.films`.
-2. `faves`: should simply start off as an empty array.
-3. `current`: should start off as an empty object.
+1. `films, setFilms`: to hold a reference to `TMDB.films`.
+2. `faves, setFaves`: should simply start off as an empty array.
+3. `current, setCurrent`: should start off as an empty object.
 
 #### Step 3: Pass State Values to `FilmListing` and `FilmDetails` as Props
 
@@ -46,13 +44,13 @@ Let's fix this:
 
 #### Step 1: Remove the State Setter in the `fave`
 
-Take the `isFave` state out of the `fave` component.
+Remove the `isFave` state out of the `fave` component.
 
 #### Step 2: Replace `setIsFave` in `handleClick` handler
 
 Because you're no longer holding the state in the `Fave` component, you no longer want to set the `isFave` state in the `handleClick()` event handler.
 
-Instead, assume that the parent component will pass a handler called `onFaveToggle()` to you through the `props` object.
+Instead, assume that the parent component will pass a handler called `onFaveToggle()` to the `Fave` Component through the `props` object.
 
 Change `handleClick()` as follows:
 
@@ -60,7 +58,6 @@ Change `handleClick()` as follows:
 # /src/Fave.js
 
 const handleClick = (e) => {
-  e.stopPropagation();
   console.log('Handling Fave click!');
 
   // Add this line. You'll call the function passed through props.
@@ -77,7 +74,7 @@ This way, when a user clicks, `onFaveToggle()` will be called at a higher compon
 
 You've taken the `isFave` state out of `Fave` and will be passing a prop called `isFave` instead. In the `Fave` component, replace `isFave` with `props.isFave`. You'll send that information down from a parent component that knows this info.
 
-This is all you need to change in `fave.js`! It will still check to see if the user has clicked the "Fave" toggle button. The difference is that, once the user clicks, instead of changing the `faves` array directly, the `handleClick()` function will call `onFaveToggle()` to do it.
+This is all you need to change in `fave.js`.  It will still check to see if the user has clicked the "Fave" toggle button. The difference is that, once the user clicks, instead of changing the `faves` array directly, the `handleClick()` function will call `onFaveToggle()` to do it.
 
 You'll define `onFaveToggle()` in a higher component.
 
@@ -89,59 +86,55 @@ You'll move the "Fave" toggle functionality all the way up to the `App` componen
 
 In the `App` component, create a `handleFaveToggle()` function. It doesn't need to do anything yet, but soon you will update the `faves` array when a film is favorited or unfavorited. The `handleFaveToggle()` function should accept a film object as an argument (this will be the film that the user is toggling).
 
-#### Step 5: Bind the Handler to the Component
-
-Add the following to the `App` component:
-
 ```js
 const handleFaveToggle = () => {
   // do stuff here
 }
 ```
 
-#### Step 6: Clone the `faves` State
+#### Step 5: Clone the `faves` State
 
 To recap, the `faves` state is going to hold the user's favorite films. Your goal is to, when the user clicks the icon to favorite or unfavorite a film, either add or remove the given film from the `faves` array.
 
 To do this, you need to call `setFave` and give it the updated array (you can't just update it directly. Otherwise, React won't know to re-render the components to reflect the changes). To accomplish this, you'll make a copy of the existing `faves` array, update it, and then pass the copy to `setFave`.
 
-First, just make a copy. Inside `handleFaveToggle()`, use the JavaScript [`Array.prototype.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) method to make a copy and store it in a `const` variable called `faves`.
+First, just make a copy. Inside `handleFaveToggle()`, use the JavaScript's `spread operator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) to make a copy of the array and store it in a `const` variable called `faves`.
 
-#### Step 7: Find the Index of the Passed Film in the `faves` Array
+#### Step 6: Find the Index of the Passed Film in the `faves` Array
 
-Now, underneath the slice, use the JavaScript [`Array.prototype.indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) method to store the position of the film in the array in a `const` variable called `filmIndex`.
+Now, underneath the `faves` variable use the JavaScript [`Array.prototype.indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) method to store the position of the film in the array in a `const` variable called `filmIndex`.
 
 Now, `filmIndex` will be an index value starting at `0`.
 
-#### Step 8: Set Up a Conditional for Adding or Removing Film From the `faves` Array
+#### Step 7: Set Up a Conditional for Adding or Removing Film From the `faves` Array
 
 If the film is found in the array, `indexOf()` will return an index value starting at `0`. Conversely, `indexOf()` will return `-1` if the element isn't found (if the film it's looking for is not currently in the `faves` array).
 
-Because this `handleFaveToggle()` function is designed to change the array of the user's film favorites, there are two options:
+Because the `handleFaveToggle()` function is designed to change the array of the user's film favorites, there are two options:
 
-- If the film is already in their favorites, when the user clicks the button, they want to remove it from their favorites. You need to take it out of the `faves` array.
-- If the film is not in their favorites, when the user clicks the button, they want to add it to their favorites. You need to add it to the `faves` array.
+- If the film is already in their favorites, when the user clicks the button, it will be removed from their favorites and so you need to take it out of the `faves` array.
+- If the film is not in their favorites, when the user clicks the button, it will be added it to their favorites so you need to add it to the `faves` array.
 
-Write a conditional statement covering the two cases. When adding a film to `faves`, log out `Adding [FILM NAME] to faves...`; when removing a film from `faves`, log out `Removing [FILM NAME] from faves...`.
+Write a conditional statement covering the two cases. When adding a film to `faves`, console.log  `Adding [FILM NAME] to faves...`; when removing a film from `faves`, console.log  `Removing [FILM NAME] from faves...`.
 
-#### Step 9: Change Whether or Not the Film Is in `faves`
+#### Step 8: Change Whether or Not the Film Is in `faves`
 
 To remove a film that's already in the `faves` array, use the [`Array.prototype.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) method.
 
 To add a new film to the `faves` array, just [`push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push) it onto the end of the array.
 
-#### Step 10: Use `setFaves` to Update the State of `faves`
+#### Step 9: Use `setFaves` to Update the State of `faves`
 
-Now that you have updated the `faves` array, you need to call `setFaves()` so React will re-render the appropriate components in the tree. You can make this succinct by using object literal shorthand. It should look like this:
+Now that you have updated the `faves` array, you need to call `setFaves()` so React will re-render the appropriate components in the tree. 
 
 
-#### Step 11: Pass the `handleFaveToggle()` Function to `FilmListing` Through Props
+#### Step 10: Pass the `handleFaveToggle()` Function to `FilmListing` Through Props
 
 Now that the `handleFaveToggle()` method lives on the `App` component, you want to pass it all the way down the tree so that you can call it when the "Fave" button is clicked.
 
 In the `App` component's add a new prop to the `FilmListing` component called `onFaveToggle`. Its value should be a reference to the `handleFaveToggle()` method you just finished writing.
 
-#### Step 12: Pass the `onFaveToggle()` Function to `FilmRow` Through Props
+#### Step 11: Pass the `onFaveToggle()` Function to `FilmRow` Through Props
 
 In the `FilmListing` component, you render one `FilmRow` component for each film in the `films` prop. You need to pass the `onFaveToggle()` function down to each `FilmRow` (with the ultimate goal being that you call it in the `Fave` component). However, you want to ensure that it passes the current film up to the `handleFaveToggle()` method in the `App` component when called.
 
@@ -155,7 +148,7 @@ const allFilms = props.films.map((film) => {
 })
 ```
 
-#### Step 14: Pass the `onFaveToggle()` Function to `fave` Through Props
+#### Step 12: Pass the `onFaveToggle()` Function to `fave` Through Props
 
 Now, the `FilmRow` component is receiving the `onFaveToggle()` function as a prop. However, the `FilmRow` component doesn't need the function; the `Fave` component does. You'll pass it along as a prop to `Fave`.
 
@@ -163,7 +156,7 @@ In `FilmRow`'s where you call the `Fave` component, add a prop called `onFaveTog
 
 Great! The `onFaveToggle()` function is now being passed from the `App` component, where it's defined, down to the `FilmListing` component, down to the `FilmRow` component, down to the `Fave` component.
 
-#### Step 15: Pass `isFave` Down From `FilmListing` Through `FilmRow`
+#### Step 13: Pass `isFave` Down From `FilmListing` Through `FilmRow`
 
 The `fave` component is also expecting to receive a prop called `isFave`, so you need to pass `isFave` to the `Fave` component from `FilmRow`.
 
@@ -181,7 +174,7 @@ Now, `fave` is getting the true or false Boolean of whether or not a film is a f
 
 Look in your browser to see this working: The JavaScript console will log if something is added or removed from the user's favorites.
 
-#### Step 16: Update the `faves` Counter
+#### Step 14: Update the `faves` Counter
 
 Currently, in the browser, the `faves` counter the user sees always displays `0`. You'll update the counter in the `FilmListing` to accurately show the number of faves in the array.
 
@@ -197,7 +190,7 @@ In `FilmRow`, there's still the function to handle when a user clicks a row for 
 
 Following the same steps as you did for the `fave` event handler, move the `handleDetailsClick()` definition to the `App` component.
 
-For `handleDetailsClick()` in the `App` component, just log into the console and set the `current` state to the passed film for now. You'll handle looking up film details later. Make sure you pass the `current` state as a `films` prop to the `FilmDetails` component.
+For `handleDetailsClick()` in the `App` component  set the `current` state to the passed film for now. You'll handle looking up film details later. Make sure you pass the `current` state as a `films` prop to the `FilmDetails` component.
 
 ### Task 4: Make the Filter Work on `FilmListing`
 

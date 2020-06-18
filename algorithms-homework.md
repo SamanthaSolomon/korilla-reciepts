@@ -1,18 +1,41 @@
-# Sum Of An Array Using Array.reduce()
+# Search insert position
 
-Write a function called `sumOfArr` to compute the sum of an array of integers the uses the Array.reduce() method.
+Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
+You may assume no duplicates in the array.
+
+## Example 1
 ```text
-Input: [1,2,3]
-Output: 6
+Input: [1,3,5,6], 5
+Output: 2
 ```
 
-## Function signature 
+## Example 2
+```text
+Input: [1,3,5,6], 2
+Output: 1
+```
+
+## Example 3
+```text
+Input: [1,3,5,6], 7
+Output: 4
+```
+
+## Example 4
+```text
+Input: [1,3,5,6], 0
+Output: 0
+```
+
 ```js
-let nums = [1,2,3];
+/**
+ * @param nums
+ * @param target
+ * @returns {number}
+ */
+const searchInsert = function (nums, target) {  
+}
 
-const sumOfArr = () => {
-
-};
-console.log('this is sumOfArr', sumOfArr(nums));
+console.log(searchInsert([1, 3, 5, 6], 7));
 ```

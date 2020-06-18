@@ -15,7 +15,7 @@
 
 ### 3. Algo Practice - EST TIME: 20min
 
-- Work through [Sum Of An Array Using Array.reduce()](./algorithms-homework.md) 
+- Work through [Search insert position](./algorithms-homework.md) 
 
 ### 4.  Interview Practice - EST TIME: 20min
 

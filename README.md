@@ -6,11 +6,6 @@
 - When commpleted submit your homework [here](https://docs.google.com/forms/u/3/d/e/1FAIpQLSezWVG8OLr6ZxmRNOwZ6xsoYO5lu_7L1LTWA3X6iclG4iG_Hw/viewform?usp=send_form). 
 
 ### 2. Read The Following - EST TIME: 40min
-
-- Read: [React Hooks To Fetch Data](https://www.robinwieruch.de/react-hooks-fetch-data) but only the following sections:
-  - DATA FETCHING WITH REACT HOOKS
-  - HOW TO TRIGGER A HOOK PROGRAMMATICALLY
-- Read: [Controlled vs Uncontrolled Inputs in React](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
   
 
 ### 3. Algo Practice - EST TIME: 20min

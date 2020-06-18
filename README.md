@@ -10,7 +10,6 @@
 - Read: [React Hooks To Fetch Data](https://www.robinwieruch.de/react-hooks-fetch-data) but only the following sections:
   - DATA FETCHING WITH REACT HOOKS
   - HOW TO TRIGGER A HOOK PROGRAMMATICALLY
-- Read: [Controlled vs Uncontrolled Inputs in React](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/)
   
 
 ### 3. Algo Practice - EST TIME: 20min

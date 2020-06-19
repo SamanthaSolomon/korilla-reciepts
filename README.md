@@ -5,6 +5,9 @@
 - Continue to work through [Korilla Receipts](https://git.generalassemb.ly/SEIR-526/korilla-receipts?organization=SEIR-526&organization=SEIR-526)
 - When commpleted submit your homework [here](https://docs.google.com/forms/u/3/d/e/1FAIpQLSezWVG8OLr6ZxmRNOwZ6xsoYO5lu_7L1LTWA3X6iclG4iG_Hw/viewform?usp=send_form). 
 
+In preparation for next weeks class on pulling data remotely please go to the OMDB web site and 
+[request an api key](http://www.omdbapi.com/apikey.aspx)
+
 ### 2. Read The Following - EST TIME: 1hr
 
  - [David Walsh's Blog - The Fetch API](https://davidwalsh.name/fetch)

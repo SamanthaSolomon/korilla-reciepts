@@ -10,6 +10,8 @@
 ### 2. Read The Following - EST TIME: 1hr
 
  - [David Walsh's Blog - The Fetch API](https://davidwalsh.name/fetch)
+ 
+ **BONUS**
 - Read: [React Hooks To Fetch Data](https://www.robinwieruch.de/react-hooks-fetch-data) but only the following sections:
   - DATA FETCHING WITH REACT HOOKS
   - HOW TO TRIGGER A HOOK PROGRAMMATICALLY

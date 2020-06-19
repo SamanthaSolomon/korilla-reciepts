@@ -22,7 +22,7 @@
 ### 4.  Interview Practice - EST TIME: 20min
 
 - Add and answer the following question: 
-   - **Explain how useEffect is used to make an API call? Give one or more examples..**.
+   - **Explain the difference between the onSubmit and onChange event and how are they used together in React. Give one or more examples..**.
 - All answers must be at least a paragraph in length however the more you write the more you have to talk about.
 
 

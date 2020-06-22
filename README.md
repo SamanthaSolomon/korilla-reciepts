@@ -4,8 +4,8 @@
 
 - Continue to work through [Korilla Receipts](https://git.generalassemb.ly/SEIR-526/korilla-receipts?organization=SEIR-526&organization=SEIR-526)
 - When completed submit your homework [here](https://docs.google.com/forms/u/3/d/e/1FAIpQLSezWVG8OLr6ZxmRNOwZ6xsoYO5lu_7L1LTWA3X6iclG4iG_Hw/viewform?usp=send_form). 
-- In preparation for next weeks class on pulling data remotely go to the OMDB web site and 
-[request an api key](http://www.omdbapi.com/apikey.aspx).   You can test that the key works by replacing the key below with your key and then pasting and entire string in the browser: `http://www.omdbapi.com/?apikey=9999999&t=Eraserhead`
+- In preparation for next the class on pulling data remotely go to the OMDB web site and 
+[request a Free api key](http://www.omdbapi.com/apikey.aspx).   You can test that the key works by replacing the key below with your key and then pasting and entire string in the browser: `http://www.omdbapi.com/?apikey=9999999&t=Eraserhead`
 
 ### 2. Read The Following - EST TIME: 1hr
 

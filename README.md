@@ -7,6 +7,14 @@
 - In preparation for next the class on pulling data remotely go to the OMDB web site and 
 [request a Free api key](http://www.omdbapi.com/apikey.aspx).   You can test that the key works by replacing the key below with your key and then pasting and entire string in the browser: `http://www.omdbapi.com/?apikey=9999999&t=Eraserhead`
 
+> NOTE: you need everything up to the `=` and everything including the `&` and after
+
+> `http://www.omdbapi.com/?apikey=[APIkeyGoesHere]&t=Eraserhead`
+
+<details><summary>what does the response look like?</summary>
+![image](./image.png)
+</details>
+
 ### 2. Read The Following - EST TIME: 1hr
 
 - Read: [David Walsh's Blog - The Fetch API](https://davidwalsh.name/fetch)

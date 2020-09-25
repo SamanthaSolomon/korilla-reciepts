@@ -19,7 +19,9 @@
 
 ### 2. Read The Following - EST TIME: 1hr
 
-
+**WATCH**
+Playlist to review and preview React Material for This Unit, Watch at least first 3 videos in playlist
+[React 101 Playlist with Alex Merced](https://www.youtube.com/playlist?list=PLY6oTPmKnKbb5sh681mrY7u3Hm1g5ecze)
  
  **BONUS**
 - Read: [David Walsh's Blog - The Fetch API](https://davidwalsh.name/fetch)
@@ -28,9 +30,7 @@
   - HOW TO TRIGGER A HOOK PROGRAMMATICALLY
 - Read: [Promises 101 with $.ajax, Fetch, and Axios](https://tuts.alexmercedcoder.com/promises/)
 
-**WATCH**
-Playlist to review and preview React Material for This Unit, Watch at least first 3 videos in playlist
-[React 101 Playlist with Alex Merced](https://www.youtube.com/playlist?list=PLY6oTPmKnKbb5sh681mrY7u3Hm1g5ecze)
+
   
 
 ### 3. Algo Practice - EST TIME: 20min

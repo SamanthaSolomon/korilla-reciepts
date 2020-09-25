@@ -12,7 +12,9 @@
 > `http://www.omdbapi.com/?apikey=[APIkeyGoesHere]&t=Eraserhead`
 
 <details><summary>what does the response look like?</summary>
+ 
 ![image](./image.png)
+ 
 </details>
 
 ### 2. Read The Following - EST TIME: 1hr

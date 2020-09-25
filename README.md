@@ -3,7 +3,7 @@
 ### 1. TBD - EST TIME: 2 - 5hrs
 
 - Continue to work through [Korilla Receipts](./korilla.md)
-- When completed submit your homework [here](https://docs.google.com/forms/u/3/d/e/1FAIpQLSezWVG8OLr6ZxmRNOwZ6xsoYO5lu_7L1LTWA3X6iclG4iG_Hw/viewform?usp=send_form). 
+- When completed submit your homework [here](https://docs.google.com/forms/u/1/d/1pyy5-MMDmUkkupg8m659ZGNawQpGFz71HSXcv_xAx2g/edit). 
 - In preparation for next the class on pulling data remotely go to the OMDB web site and 
 [request a Free api key](http://www.omdbapi.com/apikey.aspx).   You can test that the key works by replacing the key below with your key and then pasting and entire string in the browser: `http://www.omdbapi.com/?apikey=9999999&t=Eraserhead`
 

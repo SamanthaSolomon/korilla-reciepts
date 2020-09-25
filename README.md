@@ -26,6 +26,11 @@
 - Read: [React Hooks To Fetch Data](https://www.robinwieruch.de/react-hooks-fetch-data) but only the following sections:
   - DATA FETCHING WITH REACT HOOKS
   - HOW TO TRIGGER A HOOK PROGRAMMATICALLY
+- Read: [Promises 101 with $.ajax, Fetch, and Axios](https://tuts.alexmercedcoder.com/promises/)
+
+**WATCH**
+Playlist to review and preview React Material for This Unit, Watch at least first 3 videos in playlist
+[React 101 Playlist with Alex Merced](https://www.youtube.com/playlist?list=PLY6oTPmKnKbb5sh681mrY7u3Hm1g5ecze)
   
 
 ### 3. Algo Practice - EST TIME: 20min
